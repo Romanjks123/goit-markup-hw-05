@@ -570,7 +570,9 @@ margin-left: 80px;
 
 .footer-p-form {
     color: #fff;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
 .footer-form {
@@ -587,10 +589,14 @@ margin-left: 80px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background-color: transparent;
         padding-left: 16px;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #ffffff;
 }
 
 .email-footer::placeholder {
-    color: #fff;
+    color: #ffffff;
 }
 
 .btn-footer {
@@ -598,13 +604,13 @@ display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 16px;
     border-radius: 4px;
         padding: 8px 24px;
-        width: 165px;
+        min-width: 165px;
         height: 40px;
         background-color: #4d5ae5;
         border: none;
+        cursor: pointer;
         color: #fff;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -615,12 +621,14 @@ display: flex;
 
 .svg-form {
     fill: #fff;
+    margin-left: 16px;
 }
 
 .backdrop {
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: fixed;
     top: 0;
 
@@ -636,14 +644,19 @@ border-radius: 4px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 }
 
 .btn-exit {
     width: 24px;
     height: 24px;
 border-radius: 50%;
-border: 1px solid #8e8f99;
+border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #e7e9fc;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 display: flex;
 justify-content: center;
 align-items: center;
@@ -670,12 +683,13 @@ right: 24px;
         background-color: #404bbf;
                 border: none;
     .svg-exit {
-            fill: #fff;
+            fill: #ffffff;
         }
 }
 
 .svg-exit {
     fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .par-modal {
@@ -685,7 +699,7 @@ right: 24px;
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
-        margin-top: 72px;
+        margin-bottom: 16px;
 
 }
 
@@ -699,7 +713,6 @@ right: 24px;
         justify-content: flex-start;
         flex-direction: column;
         gap: 8px;
-        margin: 16px 24px;
 
 }
 
@@ -830,5 +843,5 @@ border-radius: 2px;
             border: none;
             color: #fff;
             display: block;
-        margin: 24px auto 0 auto;
+        margin: 0 auto 0 auto;
         }
