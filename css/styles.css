@@ -840,6 +840,10 @@ border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.icon-check-svg {
+    display: inline-flex;
+}
+
 .input-policy:checked + .label-policy .span-icon {
     background-color: #404BBF;
         fill: #F4F4FD;
