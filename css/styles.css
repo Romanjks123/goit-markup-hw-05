@@ -742,15 +742,24 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 
 }
 
+.div-for-tArea {
+    margin-bottom: 16px;
+}
+
 .textA-modal {
     border: 1px solid rgba(46, 47, 66, 0.4);
+    color: rgba(46, 47, 66, 0.4);
         border-radius: 4px;
-        width: 360px;
+        background-color: transparent;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.04em;
+        width: 100%;
         height: 120px;
-        padding-left: 16px;
-        padding-top: 8px;
+        padding: 8px 16px;
         resize:none;
         outline: transparent;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textA-modal:focus {
@@ -783,11 +792,11 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 
 
 .check {
-margin-left: 24px;
 display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
+    margin-bottom: 24px;
 }
 
 
@@ -795,7 +804,7 @@ display: flex;
 .label-policy {
     font-weight: 400;
         font-size: 12px;
-        line-height: 1.16667;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
         text-align: center;
@@ -820,15 +829,15 @@ display: flex;
 
 .span-icon {
  margin-right: 8px;
- display: inline;
+ display: inline-flex;
  width: 16px;
  height: 16px;
 border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    display: flex;
     justify-content: center;
     align-items: center;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-policy:checked + .label-policy .span-icon {
