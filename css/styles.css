@@ -822,7 +822,6 @@ display: flex;
 }
 
 .label-policy {
-    display: flex;
     align-items: center;
     justify-content: center;
 }
